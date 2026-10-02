@@ -1,7 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "On the ratio of surjective group homomorphisms to ring homomorphisms between cyclic rings"
-type: article
 authors:
   - family-names: Mandal
     given-names: Priyabrata
@@ -16,7 +15,7 @@ authors:
   - family-names: "[Third Author Surname]"
     given-names: "[Given names]"
     affiliation: "[Department, Institution, City PIN, Country]"
-    email: "[email address]"
+    # email: "[email address]"
     # orcid: "https://orcid.org/[0000-0000-0000-0000]"
 doi: 10.5281/zenodo.23106785
 identifiers:
