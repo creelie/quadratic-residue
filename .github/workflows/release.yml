@@ -1,30 +1,21 @@
-name: Release
+name: Remove release
 
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Release tag, e.g. v1.0.0"
+        description: "Tag of the release to delete"
         required: true
-  push:
-    tags:
-      - "v*"
 
 permissions:
   contents: write
 
 jobs:
-  release:
+  remove:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Create GitHub release (archived by Zenodo when the repository is enabled there)
+      - name: Delete the GitHub release and its tag
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.event.inputs.tag || github.ref_name }}
-        run: |
-          gh release view "$TAG" >/dev/null 2>&1 && { echo "release $TAG exists"; exit 0; }
-          gh release create "$TAG" paper/main.pdf \
-            --target "$GITHUB_SHA" \
-            --title "On the ratio of surjective group homomorphisms to ring homomorphisms between cyclic rings ($TAG)" \
-            --notes "Manuscript (AIMS Mathematics submission version), LaTeX source, figures, and the C and Python programs and data used for the numerical checks."
+          TAG: ${{ github.event.inputs.tag }}
+        run: gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --cleanup-tag --yes
