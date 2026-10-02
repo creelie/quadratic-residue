@@ -42,6 +42,8 @@ TeX distribution (with `cm-super`) for the figures and the paper.
 The outputs of the two C programs are stored in [`data/odd_3mod4_counts.txt`](data/odd_3mod4_counts.txt)
 (columns `y`, `A(y)`) and [`data/rho_sums.txt`](data/rho_sums.txt) (columns `x`, `2 * sum_{n<=x} rho(n)`).
 
+The computational code was written with the assistance of Claude (Anthropic).
+
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff).
