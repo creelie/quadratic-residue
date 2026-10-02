@@ -18,6 +18,14 @@ authors:
     affiliation: "[Department, Institution, City PIN, Country]"
     email: "[email address]"
     # orcid: "https://orcid.org/[0000-0000-0000-0000]"
+doi: 10.5281/zenodo.23106785
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23106785
+    description: "Zenodo archive of version v1.1.2"
+  - type: doi
+    value: 10.5281/zenodo.23106784
+    description: "Zenodo archive, all versions"
 repository-code: "https://github.com/creelie/quadratic-residue"
 keywords:
   - homomorphisms of cyclic rings

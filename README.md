@@ -5,6 +5,9 @@ Priyabrata Mandal (corresponding author, MANIT Bhopal), Deep Bhattacharjee and [
 Manuscript prepared for *AIMS Mathematics*. The compiled paper is
 [`paper/main.pdf`](paper/main.pdf); the source is [`paper/main.tex`](paper/main.tex).
 
+Archived on Zenodo: [doi:10.5281/zenodo.23106785](https://doi.org/10.5281/zenodo.23106785)
+(all versions: [doi:10.5281/zenodo.23106784](https://doi.org/10.5281/zenodo.23106784)).
+
 ## Results
 
 For `n | m` there are `phi(n)` surjective group homomorphisms `Z_m -> Z_n` and
