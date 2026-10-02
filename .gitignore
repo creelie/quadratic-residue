@@ -8,3 +8,5 @@ __pycache__/
 *.o
 exc
 rho_sum
+paper/arxiv_source*.zip
+paper/arxiv_source*_preview.pdf

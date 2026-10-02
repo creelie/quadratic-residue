@@ -37,6 +37,7 @@ TeX distribution (with `cm-super`) for the figures and the paper.
 | `python3 code/tables.py` | Rows of Tables 1-3 from `data/` | seconds |
 | `python3 code/figures.py` | Figures 1-4 into `paper/figures/` | seconds |
 | `cd paper && latexmk -pdf main.tex` | The paper | seconds |
+| `sh paper/make_arxiv.sh` | arXiv source bundle `paper/arxiv_source.zip` | seconds |
 
 The outputs of the two C programs are stored in [`data/odd_3mod4_counts.txt`](data/odd_3mod4_counts.txt)
 (columns `y`, `A(y)`) and [`data/rho_sums.txt`](data/rho_sums.txt) (columns `x`, `2 * sum_{n<=x} rho(n)`).
