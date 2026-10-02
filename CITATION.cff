@@ -13,6 +13,11 @@ authors:
     affiliation: "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
     email: itsdeep@live.com
     orcid: "https://orcid.org/0000-0003-0466-750X"
+  - family-names: "[Third Author Surname]"
+    given-names: "[Given names]"
+    affiliation: "[Department, Institution, City PIN, Country]"
+    email: "[email address]"
+    # orcid: "https://orcid.org/[0000-0000-0000-0000]"
 repository-code: "https://github.com/creelie/quadratic-residue"
 keywords:
   - homomorphisms of cyclic rings

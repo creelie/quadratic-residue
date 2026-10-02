@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, e.g. v1.1.0"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create the GitHub release (Zenodo archives it when the repository is switched on there)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.inputs.tag }}
+        run: |
+          gh release view "$TAG" >/dev/null 2>&1 && { echo "release $TAG already exists"; exit 1; }
+          gh release create "$TAG" paper/main.pdf \
+            --target "$GITHUB_SHA" \
+            --title "On the ratio of surjective group homomorphisms to ring homomorphisms between cyclic rings ($TAG)" \
+            --notes "Manuscript prepared for AIMS Mathematics, with its LaTeX source and figures, and the C and Python programs and data used for the numerical checks. The third author's name, affiliation and ORCID are placeholders to be completed."

@@ -1,6 +1,6 @@
 # On the ratio of surjective group homomorphisms to ring homomorphisms between cyclic rings
 
-Priyabrata Mandal (corresponding author, MANIT Bhopal) and Deep Bhattacharjee.
+Priyabrata Mandal (corresponding author, MANIT Bhopal), Deep Bhattacharjee and [Third Author Name].
 
 Manuscript prepared for *AIMS Mathematics*. The compiled paper is
 [`paper/main.pdf`](paper/main.pdf); the source is [`paper/main.tex`](paper/main.tex).
